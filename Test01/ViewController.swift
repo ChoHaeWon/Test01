@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var LabelTest: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func buttonLeft(_ sender: Any) {
+        LabelTest.text = "왼쪽 버튼 클릭!"
+    }
+    
+    @IBAction func buttonRight(_ sender: Any) {
+        LabelTest.text = "오른쪽 버튼 클릭!"
+    }
+    
 }
 
